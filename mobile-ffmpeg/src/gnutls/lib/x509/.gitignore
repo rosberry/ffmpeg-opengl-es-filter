@@ -1,0 +1,6 @@
+/.deps/
+/.libs/
+*.lo
+*.o
+/Makefile
+/libgnutls_x509.la

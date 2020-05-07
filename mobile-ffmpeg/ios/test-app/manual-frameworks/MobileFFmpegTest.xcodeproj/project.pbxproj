@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340FABBE2115A17600B33CE7 /* VidStabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 340FABBC2115A17600B33CE7 /* VidStabViewController.h */; };
+		340FABBF2115A17600B33CE7 /* VidStabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340FABBD2115A17600B33CE7 /* VidStabViewController.m */; };
+		3423D267217F7CC100C3C7ED /* MediaInformationParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3423D266217F7CC100C3C7ED /* MediaInformationParserTests.m */; };
+		3423D269217F7D4E00C3C7ED /* MediaInformationParserTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 3423D268217F7D4E00C3C7ED /* MediaInformationParserTests.h */; };
+		343165D121D136FC001A7185 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 343165D021D136FC001A7185 /* libz.tbd */; };
+		343165D321D13704001A7185 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 343165D221D13704001A7185 /* libbz2.tbd */; };
+		3431662B21D13B0A001A7185 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3431662A21D13B0A001A7185 /* libc++.tbd */; };
+		343E66B5210784BD00F95E5B /* HttpsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 343E66B3210784BD00F95E5B /* HttpsViewController.h */; };
+		343E66B6210784BD00F95E5B /* HttpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343E66B4210784BD00F95E5B /* HttpsViewController.m */; };
+		343E66B9210789DE00F95E5B /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 343E66B7210789DE00F95E5B /* Constants.h */; };
+		343E67052107AD0100F95E5B /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 343E67032107AD0100F95E5B /* Util.h */; };
+		343E67062107AD0100F95E5B /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 343E67042107AD0100F95E5B /* Util.m */; };
+		343E67092107C27600F95E5B /* TabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 343E67072107C27600F95E5B /* TabBarController.h */; };
+		343E670A2107C27600F95E5B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343E67082107C27600F95E5B /* TabBarController.m */; };
+		3457454B2113B8AD00059043 /* AudioViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 345745492113B8AD00059043 /* AudioViewController.h */; };
+		3457454C2113B8AD00059043 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3457454A2113B8AD00059043 /* AudioViewController.m */; };
+		3457454F2113B8D300059043 /* SubtitleViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3457454D2113B8D300059043 /* SubtitleViewController.h */; };
+		345745502113B8D300059043 /* SubtitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3457454E2113B8D300059043 /* SubtitleViewController.m */; };
+		348439ED20B2EFAF001A3990 /* pyramid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348439EA20B2EFAF001A3990 /* pyramid.jpg */; };
+		348439EE20B2EFAF001A3990 /* tajmahal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348439EB20B2EFAF001A3990 /* tajmahal.jpg */; };
+		348439EF20B2EFAF001A3990 /* colosseum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348439EC20B2EFAF001A3990 /* colosseum.jpg */; };
+		34AE893522AE598900742D95 /* freetype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE88FB22AE598600742D95 /* freetype.framework */; };
+		34AE893622AE598900742D95 /* shine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE88FC22AE598600742D95 /* shine.framework */; };
+		34AE893722AE598900742D95 /* x265.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE88FD22AE598600742D95 /* x265.framework */; };
+		34AE893822AE598900742D95 /* twolame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE88FE22AE598600742D95 /* twolame.framework */; };
+		34AE893922AE598900742D95 /* libvpx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE88FF22AE598600742D95 /* libvpx.framework */; };
+		34AE893A22AE598900742D95 /* fontconfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890022AE598600742D95 /* fontconfig.framework */; };
+		34AE893B22AE598900742D95 /* jpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890122AE598600742D95 /* jpeg.framework */; };
+		34AE893C22AE598900742D95 /* tiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890222AE598600742D95 /* tiff.framework */; };
+		34AE893D22AE598900742D95 /* wavpack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890322AE598600742D95 /* wavpack.framework */; };
+		34AE893E22AE598900742D95 /* libilbc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890422AE598600742D95 /* libilbc.framework */; };
+		34AE893F22AE598900742D95 /* libwebp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890522AE598600742D95 /* libwebp.framework */; };
+		34AE894022AE598900742D95 /* libsndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890622AE598600742D95 /* libsndfile.framework */; };
+		34AE894122AE598900742D95 /* libnettle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890722AE598600742D95 /* libnettle.framework */; };
+		34AE894222AE598900742D95 /* snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890822AE598600742D95 /* snappy.framework */; };
+		34AE894322AE598900742D95 /* libavutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890922AE598600742D95 /* libavutil.framework */; };
+		34AE894422AE598900742D95 /* chromaprint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890A22AE598700742D95 /* chromaprint.framework */; };
+		34AE894522AE598900742D95 /* libtheoradec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890B22AE598700742D95 /* libtheoradec.framework */; };
+		34AE894622AE598900742D95 /* libvorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890C22AE598700742D95 /* libvorbis.framework */; };
+		34AE894722AE598900742D95 /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890D22AE598700742D95 /* libpng.framework */; };
+		34AE894822AE598900742D95 /* libvorbisfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890E22AE598700742D95 /* libvorbisfile.framework */; };
+		34AE894922AE598900742D95 /* libhogweed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE890F22AE598700742D95 /* libhogweed.framework */; };
+		34AE894A22AE598900742D95 /* fribidi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891022AE598700742D95 /* fribidi.framework */; };
+		34AE894B22AE598900742D95 /* libvidstab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891122AE598700742D95 /* libvidstab.framework */; };
+		34AE894C22AE598900742D95 /* libxml2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891222AE598700742D95 /* libxml2.framework */; };
+		34AE894D22AE598A00742D95 /* libavdevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891322AE598700742D95 /* libavdevice.framework */; };
+		34AE894E22AE598A00742D95 /* libtheora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891422AE598700742D95 /* libtheora.framework */; };
+		34AE894F22AE598A00742D95 /* leptonica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891522AE598700742D95 /* leptonica.framework */; };
+		34AE895022AE598A00742D95 /* kvazaar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891622AE598700742D95 /* kvazaar.framework */; };
+		34AE895122AE598A00742D95 /* libuuid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891722AE598700742D95 /* libuuid.framework */; };
+		34AE895222AE598A00742D95 /* libswscale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891822AE598700742D95 /* libswscale.framework */; };
+		34AE895322AE598A00742D95 /* giflib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891922AE598800742D95 /* giflib.framework */; };
+		34AE895422AE598A00742D95 /* libavfilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891A22AE598800742D95 /* libavfilter.framework */; };
+		34AE895522AE598A00742D95 /* mobileffmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891B22AE598800742D95 /* mobileffmpeg.framework */; };
+		34AE895622AE598A00742D95 /* xvidcore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891C22AE598800742D95 /* xvidcore.framework */; };
+		34AE895722AE598A00742D95 /* expat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891D22AE598800742D95 /* expat.framework */; };
+		34AE895822AE598A00742D95 /* gnutls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891E22AE598800742D95 /* gnutls.framework */; };
+		34AE895922AE598A00742D95 /* libwebpdemux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE891F22AE598800742D95 /* libwebpdemux.framework */; };
+		34AE895A22AE598A00742D95 /* libavformat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892022AE598800742D95 /* libavformat.framework */; };
+		34AE895B22AE598A00742D95 /* soxr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892122AE598800742D95 /* soxr.framework */; };
+		34AE895C22AE598A00742D95 /* libcharset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892222AE598800742D95 /* libcharset.framework */; };
+		34AE895D22AE598A00742D95 /* libogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892322AE598800742D95 /* libogg.framework */; };
+		34AE895E22AE598A00742D95 /* libvorbisenc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892422AE598800742D95 /* libvorbisenc.framework */; };
+		34AE895F22AE598A00742D95 /* libiconv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892522AE598800742D95 /* libiconv.framework */; };
+		34AE896022AE598A00742D95 /* libavcodec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892622AE598800742D95 /* libavcodec.framework */; };
+		34AE896122AE598A00742D95 /* libopencore-amrwb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892722AE598800742D95 /* libopencore-amrwb.framework */; };
+		34AE896222AE598A00742D95 /* libopencore-amrnb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892822AE598900742D95 /* libopencore-amrnb.framework */; };
+		34AE896322AE598A00742D95 /* gmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892922AE598900742D95 /* gmp.framework */; };
+		34AE896422AE598A00742D95 /* libass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892A22AE598900742D95 /* libass.framework */; };
+		34AE896522AE598A00742D95 /* libtheoraenc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892B22AE598900742D95 /* libtheoraenc.framework */; };
+		34AE896622AE598A00742D95 /* libswresample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892C22AE598900742D95 /* libswresample.framework */; };
+		34AE896722AE598A00742D95 /* libwebpdecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892D22AE598900742D95 /* libwebpdecoder.framework */; };
+		34AE896822AE598A00742D95 /* opus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892E22AE598900742D95 /* opus.framework */; };
+		34AE896922AE598A00742D95 /* sdl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE892F22AE598900742D95 /* sdl.framework */; };
+		34AE896A22AE598A00742D95 /* libaom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE893022AE598900742D95 /* libaom.framework */; };
+		34AE896B22AE598A00742D95 /* tesseract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE893122AE598900742D95 /* tesseract.framework */; };
+		34AE896C22AE598A00742D95 /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE893222AE598900742D95 /* lame.framework */; };
+		34AE896D22AE598A00742D95 /* x264.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE893322AE598900742D95 /* x264.framework */; };
+		34AE896E22AE598A00742D95 /* speex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AE893422AE598900742D95 /* speex.framework */; };
+		34AE896F22AE5A2E00742D95 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3431662E21D13C58001A7185 /* CoreMotion.framework */; };
+		34AE897022AE5A3500742D95 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3431662C21D13C3D001A7185 /* VideoToolbox.framework */; };
+		34AE897122AE5A4600742D95 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3431662D21D13C4A001A7185 /* GameController.framework */; };
+		34BB547C2109D44800606B7C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BB547B2109D44800606B7C /* Constants.m */; };
+		34D0596C220DC4D900E44C62 /* PipeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D0596A220DC4D900E44C62 /* PipeViewController.h */; };
+		34D0596D220DC4D900E44C62 /* PipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D0596B220DC4D900E44C62 /* PipeViewController.m */; };
+		34DC789B21215B5800C3486C /* truenorg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34DC789721215B5800C3486C /* truenorg.otf */; };
+		34DC789C21215B5800C3486C /* subtitle.srt in Resources */ = {isa = PBXBuildFile; fileRef = 34DC789821215B5800C3486C /* subtitle.srt */; };
+		34DC789D21215B5800C3486C /* doppioone_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34DC789921215B5800C3486C /* doppioone_regular.ttf */; };
+		34DC789E21215B5800C3486C /* sil_open_font_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 34DC789A21215B5800C3486C /* sil_open_font_license.txt */; };
+		34FAE215209F7DDD005CE2AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAE214209F7DDD005CE2AE /* AppDelegate.m */; };
+		34FAE218209F7DDD005CE2AE /* CommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAE217209F7DDD005CE2AE /* CommandViewController.m */; };
+		34FAE21B209F7DDD005CE2AE /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAE21A209F7DDD005CE2AE /* VideoViewController.m */; };
+		34FAE21E209F7DDD005CE2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FAE21C209F7DDD005CE2AE /* Main.storyboard */; };
+		34FAE220209F7DDE005CE2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FAE21F209F7DDE005CE2AE /* Assets.xcassets */; };
+		34FAE223209F7DDE005CE2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FAE221209F7DDE005CE2AE /* LaunchScreen.storyboard */; };
+		34FAE226209F7DDE005CE2AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FAE225209F7DDE005CE2AE /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3452D8CF20A373640045E6B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		340FABBC2115A17600B33CE7 /* VidStabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VidStabViewController.h; sourceTree = "<group>"; };
+		340FABBD2115A17600B33CE7 /* VidStabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VidStabViewController.m; sourceTree = "<group>"; };
+		3423D266217F7CC100C3C7ED /* MediaInformationParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaInformationParserTests.m; sourceTree = "<group>"; };
+		3423D268217F7D4E00C3C7ED /* MediaInformationParserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInformationParserTests.h; sourceTree = "<group>"; };
+		343165D021D136FC001A7185 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		343165D221D13704001A7185 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		3431662A21D13B0A001A7185 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3431662C21D13C3D001A7185 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		3431662D21D13C4A001A7185 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		3431662E21D13C58001A7185 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		343E66B3210784BD00F95E5B /* HttpsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpsViewController.h; sourceTree = "<group>"; };
+		343E66B4210784BD00F95E5B /* HttpsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpsViewController.m; sourceTree = "<group>"; };
+		343E66B7210789DE00F95E5B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		343E67032107AD0100F95E5B /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		343E67042107AD0100F95E5B /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		343E67072107C27600F95E5B /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		343E67082107C27600F95E5B /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		345745492113B8AD00059043 /* AudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		3457454A2113B8AD00059043 /* AudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		3457454D2113B8D300059043 /* SubtitleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubtitleViewController.h; sourceTree = "<group>"; };
+		3457454E2113B8D300059043 /* SubtitleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubtitleViewController.m; sourceTree = "<group>"; };
+		348439EA20B2EFAF001A3990 /* pyramid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pyramid.jpg; sourceTree = "<group>"; };
+		348439EB20B2EFAF001A3990 /* tajmahal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tajmahal.jpg; sourceTree = "<group>"; };
+		348439EC20B2EFAF001A3990 /* colosseum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colosseum.jpg; sourceTree = "<group>"; };
+		34AE88FB22AE598600742D95 /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = freetype.framework; sourceTree = "<group>"; };
+		34AE88FC22AE598600742D95 /* shine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shine.framework; sourceTree = "<group>"; };
+		34AE88FD22AE598600742D95 /* x265.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = x265.framework; sourceTree = "<group>"; };
+		34AE88FE22AE598600742D95 /* twolame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = twolame.framework; sourceTree = "<group>"; };
+		34AE88FF22AE598600742D95 /* libvpx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvpx.framework; sourceTree = "<group>"; };
+		34AE890022AE598600742D95 /* fontconfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fontconfig.framework; sourceTree = "<group>"; };
+		34AE890122AE598600742D95 /* jpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = jpeg.framework; sourceTree = "<group>"; };
+		34AE890222AE598600742D95 /* tiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tiff.framework; sourceTree = "<group>"; };
+		34AE890322AE598600742D95 /* wavpack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = wavpack.framework; sourceTree = "<group>"; };
+		34AE890422AE598600742D95 /* libilbc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libilbc.framework; sourceTree = "<group>"; };
+		34AE890522AE598600742D95 /* libwebp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebp.framework; sourceTree = "<group>"; };
+		34AE890622AE598600742D95 /* libsndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libsndfile.framework; sourceTree = "<group>"; };
+		34AE890722AE598600742D95 /* libnettle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libnettle.framework; sourceTree = "<group>"; };
+		34AE890822AE598600742D95 /* snappy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = snappy.framework; sourceTree = "<group>"; };
+		34AE890922AE598600742D95 /* libavutil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavutil.framework; sourceTree = "<group>"; };
+		34AE890A22AE598700742D95 /* chromaprint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = chromaprint.framework; sourceTree = "<group>"; };
+		34AE890B22AE598700742D95 /* libtheoradec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheoradec.framework; sourceTree = "<group>"; };
+		34AE890C22AE598700742D95 /* libvorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbis.framework; sourceTree = "<group>"; };
+		34AE890D22AE598700742D95 /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpng.framework; sourceTree = "<group>"; };
+		34AE890E22AE598700742D95 /* libvorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbisfile.framework; sourceTree = "<group>"; };
+		34AE890F22AE598700742D95 /* libhogweed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libhogweed.framework; sourceTree = "<group>"; };
+		34AE891022AE598700742D95 /* fribidi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fribidi.framework; sourceTree = "<group>"; };
+		34AE891122AE598700742D95 /* libvidstab.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvidstab.framework; sourceTree = "<group>"; };
+		34AE891222AE598700742D95 /* libxml2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libxml2.framework; sourceTree = "<group>"; };
+		34AE891322AE598700742D95 /* libavdevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavdevice.framework; sourceTree = "<group>"; };
+		34AE891422AE598700742D95 /* libtheora.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheora.framework; sourceTree = "<group>"; };
+		34AE891522AE598700742D95 /* leptonica.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = leptonica.framework; sourceTree = "<group>"; };
+		34AE891622AE598700742D95 /* kvazaar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kvazaar.framework; sourceTree = "<group>"; };
+		34AE891722AE598700742D95 /* libuuid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libuuid.framework; sourceTree = "<group>"; };
+		34AE891822AE598700742D95 /* libswscale.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswscale.framework; sourceTree = "<group>"; };
+		34AE891922AE598800742D95 /* giflib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = giflib.framework; sourceTree = "<group>"; };
+		34AE891A22AE598800742D95 /* libavfilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavfilter.framework; sourceTree = "<group>"; };
+		34AE891B22AE598800742D95 /* mobileffmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mobileffmpeg.framework; sourceTree = "<group>"; };
+		34AE891C22AE598800742D95 /* xvidcore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = xvidcore.framework; sourceTree = "<group>"; };
+		34AE891D22AE598800742D95 /* expat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = expat.framework; sourceTree = "<group>"; };
+		34AE891E22AE598800742D95 /* gnutls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gnutls.framework; sourceTree = "<group>"; };
+		34AE891F22AE598800742D95 /* libwebpdemux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebpdemux.framework; sourceTree = "<group>"; };
+		34AE892022AE598800742D95 /* libavformat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavformat.framework; sourceTree = "<group>"; };
+		34AE892122AE598800742D95 /* soxr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = soxr.framework; sourceTree = "<group>"; };
+		34AE892222AE598800742D95 /* libcharset.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libcharset.framework; sourceTree = "<group>"; };
+		34AE892322AE598800742D95 /* libogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libogg.framework; sourceTree = "<group>"; };
+		34AE892422AE598800742D95 /* libvorbisenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbisenc.framework; sourceTree = "<group>"; };
+		34AE892522AE598800742D95 /* libiconv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libiconv.framework; sourceTree = "<group>"; };
+		34AE892622AE598800742D95 /* libavcodec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavcodec.framework; sourceTree = "<group>"; };
+		34AE892722AE598800742D95 /* libopencore-amrwb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "libopencore-amrwb.framework"; sourceTree = "<group>"; };
+		34AE892822AE598900742D95 /* libopencore-amrnb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "libopencore-amrnb.framework"; sourceTree = "<group>"; };
+		34AE892922AE598900742D95 /* gmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gmp.framework; sourceTree = "<group>"; };
+		34AE892A22AE598900742D95 /* libass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libass.framework; sourceTree = "<group>"; };
+		34AE892B22AE598900742D95 /* libtheoraenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheoraenc.framework; sourceTree = "<group>"; };
+		34AE892C22AE598900742D95 /* libswresample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswresample.framework; sourceTree = "<group>"; };
+		34AE892D22AE598900742D95 /* libwebpdecoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebpdecoder.framework; sourceTree = "<group>"; };
+		34AE892E22AE598900742D95 /* opus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opus.framework; sourceTree = "<group>"; };
+		34AE892F22AE598900742D95 /* sdl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = sdl.framework; sourceTree = "<group>"; };
+		34AE893022AE598900742D95 /* libaom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libaom.framework; sourceTree = "<group>"; };
+		34AE893122AE598900742D95 /* tesseract.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tesseract.framework; sourceTree = "<group>"; };
+		34AE893222AE598900742D95 /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
+		34AE893322AE598900742D95 /* x264.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = x264.framework; sourceTree = "<group>"; };
+		34AE893422AE598900742D95 /* speex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = speex.framework; sourceTree = "<group>"; };
+		34BB547B2109D44800606B7C /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		34D0596A220DC4D900E44C62 /* PipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PipeViewController.h; sourceTree = "<group>"; };
+		34D0596B220DC4D900E44C62 /* PipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PipeViewController.m; sourceTree = "<group>"; };
+		34DC789721215B5800C3486C /* truenorg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = truenorg.otf; sourceTree = "<group>"; };
+		34DC789821215B5800C3486C /* subtitle.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = subtitle.srt; sourceTree = "<group>"; };
+		34DC789921215B5800C3486C /* doppioone_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = doppioone_regular.ttf; sourceTree = "<group>"; };
+		34DC789A21215B5800C3486C /* sil_open_font_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sil_open_font_license.txt; sourceTree = "<group>"; };
+		34FAE210209F7DDD005CE2AE /* MobileFFmpegTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileFFmpegTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FAE213209F7DDD005CE2AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34FAE214209F7DDD005CE2AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34FAE216209F7DDD005CE2AE /* CommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandViewController.h; sourceTree = "<group>"; };
+		34FAE217209F7DDD005CE2AE /* CommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandViewController.m; sourceTree = "<group>"; };
+		34FAE219209F7DDD005CE2AE /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		34FAE21A209F7DDD005CE2AE /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		34FAE21D209F7DDD005CE2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34FAE21F209F7DDE005CE2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34FAE222209F7DDE005CE2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34FAE224209F7DDE005CE2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FAE225209F7DDE005CE2AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34FAE20D209F7DDD005CE2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34AE897122AE5A4600742D95 /* GameController.framework in Frameworks */,
+				34AE897022AE5A3500742D95 /* VideoToolbox.framework in Frameworks */,
+				34AE896F22AE5A2E00742D95 /* CoreMotion.framework in Frameworks */,
+				34AE894F22AE598A00742D95 /* leptonica.framework in Frameworks */,
+				34AE893822AE598900742D95 /* twolame.framework in Frameworks */,
+				34AE896D22AE598A00742D95 /* x264.framework in Frameworks */,
+				34AE895F22AE598A00742D95 /* libiconv.framework in Frameworks */,
+				34AE896B22AE598A00742D95 /* tesseract.framework in Frameworks */,
+				34AE896322AE598A00742D95 /* gmp.framework in Frameworks */,
+				34AE895922AE598A00742D95 /* libwebpdemux.framework in Frameworks */,
+				34AE896722AE598A00742D95 /* libwebpdecoder.framework in Frameworks */,
+				34AE896622AE598A00742D95 /* libswresample.framework in Frameworks */,
+				34AE895A22AE598A00742D95 /* libavformat.framework in Frameworks */,
+				34AE895822AE598A00742D95 /* gnutls.framework in Frameworks */,
+				34AE896C22AE598A00742D95 /* lame.framework in Frameworks */,
+				34AE893922AE598900742D95 /* libvpx.framework in Frameworks */,
+				34AE895022AE598A00742D95 /* kvazaar.framework in Frameworks */,
+				34AE894122AE598900742D95 /* libnettle.framework in Frameworks */,
+				34AE896922AE598A00742D95 /* sdl.framework in Frameworks */,
+				34AE893D22AE598900742D95 /* wavpack.framework in Frameworks */,
+				34AE894722AE598900742D95 /* libpng.framework in Frameworks */,
+				34AE893E22AE598900742D95 /* libilbc.framework in Frameworks */,
+				34AE896A22AE598A00742D95 /* libaom.framework in Frameworks */,
+				34AE895E22AE598A00742D95 /* libvorbisenc.framework in Frameworks */,
+				34AE894322AE598900742D95 /* libavutil.framework in Frameworks */,
+				34AE894A22AE598900742D95 /* fribidi.framework in Frameworks */,
+				34AE894622AE598900742D95 /* libvorbis.framework in Frameworks */,
+				34AE895B22AE598A00742D95 /* soxr.framework in Frameworks */,
+				34AE896522AE598A00742D95 /* libtheoraenc.framework in Frameworks */,
+				34AE896022AE598A00742D95 /* libavcodec.framework in Frameworks */,
+				343165D121D136FC001A7185 /* libz.tbd in Frameworks */,
+				34AE894022AE598900742D95 /* libsndfile.framework in Frameworks */,
+				34AE894522AE598900742D95 /* libtheoradec.framework in Frameworks */,
+				34AE895622AE598A00742D95 /* xvidcore.framework in Frameworks */,
+				3431662B21D13B0A001A7185 /* libc++.tbd in Frameworks */,
+				34AE893F22AE598900742D95 /* libwebp.framework in Frameworks */,
+				34AE894B22AE598900742D95 /* libvidstab.framework in Frameworks */,
+				34AE894C22AE598900742D95 /* libxml2.framework in Frameworks */,
+				34AE893522AE598900742D95 /* freetype.framework in Frameworks */,
+				34AE896822AE598A00742D95 /* opus.framework in Frameworks */,
+				34AE896E22AE598A00742D95 /* speex.framework in Frameworks */,
+				34AE893A22AE598900742D95 /* fontconfig.framework in Frameworks */,
+				34AE894E22AE598A00742D95 /* libtheora.framework in Frameworks */,
+				34AE896222AE598A00742D95 /* libopencore-amrnb.framework in Frameworks */,
+				34AE894222AE598900742D95 /* snappy.framework in Frameworks */,
+				34AE893C22AE598900742D95 /* tiff.framework in Frameworks */,
+				34AE896122AE598A00742D95 /* libopencore-amrwb.framework in Frameworks */,
+				34AE893722AE598900742D95 /* x265.framework in Frameworks */,
+				34AE895422AE598A00742D95 /* libavfilter.framework in Frameworks */,
+				34AE894922AE598900742D95 /* libhogweed.framework in Frameworks */,
+				34AE894422AE598900742D95 /* chromaprint.framework in Frameworks */,
+				34AE895D22AE598A00742D95 /* libogg.framework in Frameworks */,
+				343165D321D13704001A7185 /* libbz2.tbd in Frameworks */,
+				34AE895322AE598A00742D95 /* giflib.framework in Frameworks */,
+				34AE895122AE598A00742D95 /* libuuid.framework in Frameworks */,
+				34AE896422AE598A00742D95 /* libass.framework in Frameworks */,
+				34AE894822AE598900742D95 /* libvorbisfile.framework in Frameworks */,
+				34AE895522AE598A00742D95 /* mobileffmpeg.framework in Frameworks */,
+				34AE893B22AE598900742D95 /* jpeg.framework in Frameworks */,
+				34AE895222AE598A00742D95 /* libswscale.framework in Frameworks */,
+				34AE895722AE598A00742D95 /* expat.framework in Frameworks */,
+				34AE893622AE598900742D95 /* shine.framework in Frameworks */,
+				34AE895C22AE598A00742D95 /* libcharset.framework in Frameworks */,
+				34AE894D22AE598A00742D95 /* libavdevice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346AA95920B2ED94000623FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				348439EC20B2EFAF001A3990 /* colosseum.jpg */,
+				34DC789921215B5800C3486C /* doppioone_regular.ttf */,
+				348439EA20B2EFAF001A3990 /* pyramid.jpg */,
+				34DC789A21215B5800C3486C /* sil_open_font_license.txt */,
+				34DC789821215B5800C3486C /* subtitle.srt */,
+				348439EB20B2EFAF001A3990 /* tajmahal.jpg */,
+				34DC789721215B5800C3486C /* truenorg.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3498DC65209F7F1C005F5883 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34AE890A22AE598700742D95 /* chromaprint.framework */,
+				34AE891D22AE598800742D95 /* expat.framework */,
+				34AE890022AE598600742D95 /* fontconfig.framework */,
+				34AE88FB22AE598600742D95 /* freetype.framework */,
+				34AE891022AE598700742D95 /* fribidi.framework */,
+				34AE891922AE598800742D95 /* giflib.framework */,
+				34AE892922AE598900742D95 /* gmp.framework */,
+				34AE891E22AE598800742D95 /* gnutls.framework */,
+				34AE890122AE598600742D95 /* jpeg.framework */,
+				34AE891622AE598700742D95 /* kvazaar.framework */,
+				34AE893222AE598900742D95 /* lame.framework */,
+				34AE891522AE598700742D95 /* leptonica.framework */,
+				34AE893022AE598900742D95 /* libaom.framework */,
+				34AE892A22AE598900742D95 /* libass.framework */,
+				34AE892622AE598800742D95 /* libavcodec.framework */,
+				34AE891322AE598700742D95 /* libavdevice.framework */,
+				34AE891A22AE598800742D95 /* libavfilter.framework */,
+				34AE892022AE598800742D95 /* libavformat.framework */,
+				34AE890922AE598600742D95 /* libavutil.framework */,
+				34AE892222AE598800742D95 /* libcharset.framework */,
+				34AE890F22AE598700742D95 /* libhogweed.framework */,
+				34AE892522AE598800742D95 /* libiconv.framework */,
+				34AE890422AE598600742D95 /* libilbc.framework */,
+				34AE890722AE598600742D95 /* libnettle.framework */,
+				34AE892322AE598800742D95 /* libogg.framework */,
+				34AE892822AE598900742D95 /* libopencore-amrnb.framework */,
+				34AE892722AE598800742D95 /* libopencore-amrwb.framework */,
+				34AE890D22AE598700742D95 /* libpng.framework */,
+				34AE890622AE598600742D95 /* libsndfile.framework */,
+				34AE892C22AE598900742D95 /* libswresample.framework */,
+				34AE891822AE598700742D95 /* libswscale.framework */,
+				34AE891422AE598700742D95 /* libtheora.framework */,
+				34AE890B22AE598700742D95 /* libtheoradec.framework */,
+				34AE892B22AE598900742D95 /* libtheoraenc.framework */,
+				34AE891722AE598700742D95 /* libuuid.framework */,
+				34AE891122AE598700742D95 /* libvidstab.framework */,
+				34AE890C22AE598700742D95 /* libvorbis.framework */,
+				34AE892422AE598800742D95 /* libvorbisenc.framework */,
+				34AE890E22AE598700742D95 /* libvorbisfile.framework */,
+				34AE88FF22AE598600742D95 /* libvpx.framework */,
+				34AE890522AE598600742D95 /* libwebp.framework */,
+				34AE892D22AE598900742D95 /* libwebpdecoder.framework */,
+				34AE891F22AE598800742D95 /* libwebpdemux.framework */,
+				34AE891222AE598700742D95 /* libxml2.framework */,
+				34AE891B22AE598800742D95 /* mobileffmpeg.framework */,
+				34AE892E22AE598900742D95 /* opus.framework */,
+				34AE892F22AE598900742D95 /* sdl.framework */,
+				34AE88FC22AE598600742D95 /* shine.framework */,
+				34AE890822AE598600742D95 /* snappy.framework */,
+				34AE892122AE598800742D95 /* soxr.framework */,
+				34AE893422AE598900742D95 /* speex.framework */,
+				34AE893122AE598900742D95 /* tesseract.framework */,
+				34AE890222AE598600742D95 /* tiff.framework */,
+				34AE88FE22AE598600742D95 /* twolame.framework */,
+				34AE890322AE598600742D95 /* wavpack.framework */,
+				34AE893322AE598900742D95 /* x264.framework */,
+				34AE88FD22AE598600742D95 /* x265.framework */,
+				34AE891C22AE598800742D95 /* xvidcore.framework */,
+				3431662E21D13C58001A7185 /* CoreMotion.framework */,
+				3431662D21D13C4A001A7185 /* GameController.framework */,
+				3431662C21D13C3D001A7185 /* VideoToolbox.framework */,
+				3431662A21D13B0A001A7185 /* libc++.tbd */,
+				343165D221D13704001A7185 /* libbz2.tbd */,
+				343165D021D136FC001A7185 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34FAE207209F7DDD005CE2AE = {
+			isa = PBXGroup;
+			children = (
+				346AA95920B2ED94000623FE /* Resources */,
+				34FAE212209F7DDD005CE2AE /* MobileFFmpegTest */,
+				34FAE211209F7DDD005CE2AE /* Products */,
+				3498DC65209F7F1C005F5883 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34FAE211209F7DDD005CE2AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34FAE210209F7DDD005CE2AE /* MobileFFmpegTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34FAE212209F7DDD005CE2AE /* MobileFFmpegTest */ = {
+			isa = PBXGroup;
+			children = (
+				34D0596A220DC4D900E44C62 /* PipeViewController.h */,
+				34D0596B220DC4D900E44C62 /* PipeViewController.m */,
+				34FAE213209F7DDD005CE2AE /* AppDelegate.h */,
+				34FAE214209F7DDD005CE2AE /* AppDelegate.m */,
+				34FAE21F209F7DDE005CE2AE /* Assets.xcassets */,
+				345745492113B8AD00059043 /* AudioViewController.h */,
+				3457454A2113B8AD00059043 /* AudioViewController.m */,
+				34FAE216209F7DDD005CE2AE /* CommandViewController.h */,
+				34FAE217209F7DDD005CE2AE /* CommandViewController.m */,
+				343E66B7210789DE00F95E5B /* Constants.h */,
+				34BB547B2109D44800606B7C /* Constants.m */,
+				343E66B3210784BD00F95E5B /* HttpsViewController.h */,
+				343E66B4210784BD00F95E5B /* HttpsViewController.m */,
+				34FAE224209F7DDE005CE2AE /* Info.plist */,
+				34FAE221209F7DDE005CE2AE /* LaunchScreen.storyboard */,
+				34FAE225209F7DDE005CE2AE /* main.m */,
+				34FAE21C209F7DDD005CE2AE /* Main.storyboard */,
+				3423D268217F7D4E00C3C7ED /* MediaInformationParserTests.h */,
+				3423D266217F7CC100C3C7ED /* MediaInformationParserTests.m */,
+				3457454D2113B8D300059043 /* SubtitleViewController.h */,
+				3457454E2113B8D300059043 /* SubtitleViewController.m */,
+				343E67072107C27600F95E5B /* TabBarController.h */,
+				343E67082107C27600F95E5B /* TabBarController.m */,
+				343E67032107AD0100F95E5B /* Util.h */,
+				343E67042107AD0100F95E5B /* Util.m */,
+				34FAE219209F7DDD005CE2AE /* VideoViewController.h */,
+				34FAE21A209F7DDD005CE2AE /* VideoViewController.m */,
+				340FABBC2115A17600B33CE7 /* VidStabViewController.h */,
+				340FABBD2115A17600B33CE7 /* VidStabViewController.m */,
+			);
+			path = MobileFFmpegTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34F9744020A1A200004A1F68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343E67092107C27600F95E5B /* TabBarController.h in Headers */,
+				34D0596C220DC4D900E44C62 /* PipeViewController.h in Headers */,
+				3423D269217F7D4E00C3C7ED /* MediaInformationParserTests.h in Headers */,
+				3457454B2113B8AD00059043 /* AudioViewController.h in Headers */,
+				3457454F2113B8D300059043 /* SubtitleViewController.h in Headers */,
+				343E66B9210789DE00F95E5B /* Constants.h in Headers */,
+				343E67052107AD0100F95E5B /* Util.h in Headers */,
+				343E66B5210784BD00F95E5B /* HttpsViewController.h in Headers */,
+				340FABBE2115A17600B33CE7 /* VidStabViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34FAE20F209F7DDD005CE2AE /* MobileFFmpegTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FAE229209F7DDE005CE2AE /* Build configuration list for PBXNativeTarget "MobileFFmpegTest" */;
+			buildPhases = (
+				34FAE20C209F7DDD005CE2AE /* Sources */,
+				34FAE20D209F7DDD005CE2AE /* Frameworks */,
+				34FAE20E209F7DDD005CE2AE /* Resources */,
+				34F9744020A1A200004A1F68 /* Headers */,
+				3452D8CF20A373640045E6B0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileFFmpegTest;
+			productName = MobileFFmpegTest;
+			productReference = 34FAE210209F7DDD005CE2AE /* MobileFFmpegTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34FAE208209F7DDD005CE2AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = ARTHENICA;
+				TargetAttributes = {
+					34FAE20F209F7DDD005CE2AE = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = 98GD5J4999;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 34FAE20B209F7DDD005CE2AE /* Build configuration list for PBXProject "MobileFFmpegTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34FAE207209F7DDD005CE2AE;
+			productRefGroup = 34FAE211209F7DDD005CE2AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34FAE20F209F7DDD005CE2AE /* MobileFFmpegTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34FAE20E209F7DDD005CE2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348439ED20B2EFAF001A3990 /* pyramid.jpg in Resources */,
+				34DC789D21215B5800C3486C /* doppioone_regular.ttf in Resources */,
+				34DC789E21215B5800C3486C /* sil_open_font_license.txt in Resources */,
+				34FAE223209F7DDE005CE2AE /* LaunchScreen.storyboard in Resources */,
+				348439EF20B2EFAF001A3990 /* colosseum.jpg in Resources */,
+				34FAE220209F7DDE005CE2AE /* Assets.xcassets in Resources */,
+				34DC789B21215B5800C3486C /* truenorg.otf in Resources */,
+				34FAE21E209F7DDD005CE2AE /* Main.storyboard in Resources */,
+				348439EE20B2EFAF001A3990 /* tajmahal.jpg in Resources */,
+				34DC789C21215B5800C3486C /* subtitle.srt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34FAE20C209F7DDD005CE2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D0596D220DC4D900E44C62 /* PipeViewController.m in Sources */,
+				34FAE21B209F7DDD005CE2AE /* VideoViewController.m in Sources */,
+				34FAE215209F7DDD005CE2AE /* AppDelegate.m in Sources */,
+				34FAE226209F7DDE005CE2AE /* main.m in Sources */,
+				343E66B6210784BD00F95E5B /* HttpsViewController.m in Sources */,
+				340FABBF2115A17600B33CE7 /* VidStabViewController.m in Sources */,
+				34FAE218209F7DDD005CE2AE /* CommandViewController.m in Sources */,
+				3423D267217F7CC100C3C7ED /* MediaInformationParserTests.m in Sources */,
+				343E670A2107C27600F95E5B /* TabBarController.m in Sources */,
+				345745502113B8D300059043 /* SubtitleViewController.m in Sources */,
+				343E67062107AD0100F95E5B /* Util.m in Sources */,
+				3457454C2113B8AD00059043 /* AudioViewController.m in Sources */,
+				34BB547C2109D44800606B7C /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34FAE21C209F7DDD005CE2AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34FAE21D209F7DDD005CE2AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34FAE221209F7DDE005CE2AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34FAE222209F7DDE005CE2AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34FAE227209F7DDE005CE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LIBTOOLFLAGS = "-liconv";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34FAE228209F7DDE005CE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LIBTOOLFLAGS = "-liconv";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34FAE22A209F7DDE005CE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98GD5J4999;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MobileFFmpegTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthenica.mobileffmpeg.test.MobileFFmpegTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34FAE22B209F7DDE005CE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98GD5J4999;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MobileFFmpegTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthenica.mobileffmpeg.test.MobileFFmpegTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34FAE20B209F7DDD005CE2AE /* Build configuration list for PBXProject "MobileFFmpegTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FAE227209F7DDE005CE2AE /* Debug */,
+				34FAE228209F7DDE005CE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FAE229209F7DDE005CE2AE /* Build configuration list for PBXNativeTarget "MobileFFmpegTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FAE22A209F7DDE005CE2AE /* Debug */,
+				34FAE22B209F7DDE005CE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34FAE208209F7DDD005CE2AE /* Project object */;
+}

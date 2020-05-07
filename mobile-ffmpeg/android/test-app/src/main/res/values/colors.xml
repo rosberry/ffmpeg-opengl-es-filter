@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="headerColor">#e74c3c</color>
+    <color name="editColor">#3498db</color>
+    <color name="navigationColor">#e67e22</color>
+</resources>
