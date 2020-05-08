@@ -3,7 +3,7 @@ OpenGL ES filter for FFmpeg is a combination of two great libraries: [ffmpeg-gl-
 ](https://github.com/transitive-bullshit/ffmpeg-gl-transition) and [mobile-ffmpeg](https://github.com/tanersener/mobile-ffmpeg). This filter allows you to use *ffmpeg-gl-transition* in your Android application.
 The main cause of making this library is using OpenGL shader in Android application. So, we took the idea from *ffmpeg-gl-transition* and ported it OpenGL ES, then we builded FFmpeg with this filter included by using *mobile-ffmpeg* and afterwards we had our dummy shader included in great FFmpeg library.
 
-This shader just blends two videos into one.
+This shader just blends two videos into one.\
 
 ![](https://media.giphy.com/media/iJJKKoAQxqACOszX4D/giphy.gif)
 
