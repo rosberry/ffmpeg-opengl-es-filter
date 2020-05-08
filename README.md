@@ -4,6 +4,7 @@ OpenGL ES filter for FFmpeg is a combination of two great libraries: [ffmpeg-gl-
 The main cause of making this library is using OpenGL shader in Android application. So, we took the idea from *ffmpeg-gl-transition* and ported it OpenGL ES, then we builded FFmpeg with this filter included by using *mobile-ffmpeg* and afterwards we had our dummy shader included in great FFmpeg library.
 
 This shader just blends two videos into one.
+
 ![](https://media.giphy.com/media/iJJKKoAQxqACOszX4D/giphy.gif)
 
 You can find the instructions of how to add a custom filter to FFmpeg *ffmpeg.diff* in *ffmpeg-gl-transition* library. Next we added some changes to *config.h* file in *mobile-ffmpeg/src/ffmpeg* directory: 
