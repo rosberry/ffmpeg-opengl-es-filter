@@ -1,43 +1,23 @@
-**Вступление**
+# FFmpeg OpenGL ES filter
+OpenGL ES filter for FFmpeg is a combination of two great libraries: [ffmpeg-gl-transition
+](https://github.com/transitive-bullshit/ffmpeg-gl-transition) and [mobile-ffmpeg](https://github.com/tanersener/mobile-ffmpeg). This filter allows you to use *ffmpeg-gl-transition* in your Android application.
+The main cause of making this library is using OpenGL shader in Android application. So, we took the idea from *ffmpeg-gl-transition* and ported it OpenGL ES, then we builded FFmpeg with this filter included by using *mobile-ffmpeg* and afterwards we had our dummy shader included in great FFmpeg library.
 
-Этот репозиторий создан для добавления кастомного фильтра, написанного изначально на OpenGL и портированного затем на OpenGL ES.
+This shader just blends two videos into one.
+![](https://media.giphy.com/media/iJJKKoAQxqACOszX4D/giphy.gif)
 
-**Добавление в проект**
-
-[MobileFFmpeg]((https://github.com/tanersener/mobile-ffmpeg)) позволяет собирать ffmpeg для Android, iOS и tvOS.
-
-Собирается проект при помощи скрипта `android.sh`, который лежит в директории `mobile-ffmpeg`.
-
-Для сборки необходимо следующее:
-
-- **Android SDK 4.1 Jelly Bean (API Level 16)** или позднее
-- **Android NDK r20** or later with LLDB and CMake
-
-
-**Процесс сборки**
-
-В текущем проекте уже добавлен кастомный фильтр `vf_gltransition.c`
-Инструкция по добавлению находится [здесь](https://github.com/transitive-bullshit/ffmpeg-gl-transition#building-ffmpeg).
-
-1. Для начала необхидимо экспортировать переменные: 
+You can find the instructions of how to add a custom filter to FFmpeg *ffmpeg.diff* in *ffmpeg-gl-transition* library. Next we added some changes to *config.h* file in *mobile-ffmpeg/src/ffmpeg* directory: 
+```sh
+--extra-libs='-lGLESv3 -lEGL -lgcc'
 ```
-export ANDROID_HOME=<Android SDK Path>
-export ANDROID_NDK_ROOT=<Android NDK Path> 
+Then, after following instructions for building ffmpeg in *moblie-ffmpeg* library, we had the .aar file containing all needed FFmpeg binaries. After adding this file to our project we're going to use our OpenGL filter with this command: 
+```sh
+-i path-to-video1 -i path-to-video2 -filter_complex "gltransition=baseMix=1:blendMix=1" -y out.mp4
 ```
-
-2. Сборка FFmpeg представлена в двух вариантах: `Main Release` и `LTS Release`. Если minSdKVersion проекта равна 24 и более, то стоит использовать `Main Release`. Подробнее [тут.](https://github.com/transitive-bullshit/ffmpeg-gl-transition#building-ffmpeg)
-
-3. По умолчанию сборка ffmpeg происходит для всех платформ (`arm-v7a`, `arm-v7a-neon`, `arm64-v8a`, `x86`, `x86-64`), что существенно увеличивает время сборки. Для тестирования я выбрать одну платформу и отключить остальные, прописав при вызове скрипта `disable-<название>` для каждой из них.
-
-4. MobileFFMpeg поддерживает множество дополнительных библиотек, прописав в параметрах, например, `enable-x264` для подключения libx264.
-
-5. Для сборки ffmpeg использовался следующий скрипт: `./android.sh --lts --enable-gpl --enable-x264 --enable-libpng`
-
-6. После завершения сборки ffmpeg вcе сгенерированные so-шники находятся в директории `prebuilt`. Также для Android генерируется `.aar`-файл, который в последствии будет использован для подключения `MobileFFmpeg` в наш проект.
-
-7. Для добавления FFMpeg необходимо сделать следующее: 
-    - Добавить проект `android` из директории `mobile-ffmpeg` как модуль в свой проект
-    - Добавить архив `mobile-ffmpeg.aar` в свой проект, используя `File` -> `New` -> `New Module` -> `Import .JAR/.AAR Package menu`.
-    - Добавить зависимость к модулю `mobile-ffmpeg` через `Project structure`.
-    
-8. При любом изменении в файле `vf_gltransition` необходимо заново собрать `MobileFFmpeg` и заменить текущий `mobile-ffmpeg.aar` на новый.
+### Contribution
+After starting the execution of OpenGL filter on Android we found out that the speed of execution of this command leaves something to be desired on some Chinese devices. We added some changes to our filter:
+```
+Replaced GL_RGB with GL_RGBA
+Removed any calls of the method glPixelStorei() 
+```
+So, these changes improved the speed of execution on Chineses devices, but it drastically slowed down the execution of this command on Samsung devices. As, FFmpeg uses CPU for encoding the video on Android, we are sure that this issue depends on CPU. If you have any ideas related to this, please let us know. 
